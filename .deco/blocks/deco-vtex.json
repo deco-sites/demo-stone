@@ -6,5 +6,5 @@
   },
   "platform": "vtex",
   "account": "pagarme",
-  "publicUrl": "https://demopagarme.myvtex.com/"
+  "publicUrl": "https://lojinhademo-vtex.pagar.me/checkout"
 }
