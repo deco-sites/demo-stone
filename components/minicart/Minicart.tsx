@@ -229,9 +229,6 @@ export default function Cart(
                         {formatPrice(total, currency, locale)}
                       </output>
                     </div>
-                    <span class="text-sm text-base-300">
-                      Fees and shipping will be calculated at checkout
-                    </span>
                   </div>
 
                   <div class="p-4">

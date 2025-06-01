@@ -175,26 +175,6 @@ function ProductCard({
         </div>
       </a>
 
-      {/* SKU Selector */}
-      {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
-        <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
-          {variants.map(([value, link]) => [value, relative(link)] as const)
-            .map(([value, link]) => (
-              <li>
-                <a href={link} class="cursor-pointer">
-                  <input
-                    class="hidden peer"
-                    type="radio"
-                    name={`${id}-${firstSkuVariations?.[0]}`}
-                    checked={link === relativeUrl}
-                  />
-                  <Ring value={value} checked={link === relativeUrl} />
-                </a>
-              </li>
-            ))}
-        </ul>
-      )}
-
       <div class="flex-grow" />
 
       <div>

@@ -147,16 +147,18 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       style={{
         height: NAVBAR_HEIGHT_MOBILE,
         gridTemplateColumns:
-          "min-content auto min-content min-content min-content",
+          "min-content auto min-content",
       }}
-    >
-      <label
-        for={SIDEMENU_DRAWER_ID}
-        class="btn btn-square btn-sm btn-ghost"
-        aria-label="open menu"
-      >
-        <Icon id="menu" />
-      </label>
+    > 
+      <div class="flex justify-start items-center">
+        <label
+          for={SIDEMENU_DRAWER_ID}
+          class="btn btn-square btn-sm btn-ghost"
+          aria-label="open menu"
+        >
+          <Icon id="menu" />
+        </label>
+      </div>
 
       {logo && (
         <a
@@ -173,15 +175,9 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
           />
         </a>
       )}
-
-      <label
-        for={SEARCHBAR_DRAWER_ID}
-        class="btn btn-square btn-sm btn-ghost"
-        aria-label="search icon button"
-      >
-        <Icon id="search" />
-      </label>
-      <Bag />
+      <div class="flex gap-2 justify-between items-center">
+        <Bag />
+      </div>
     </div>
   </>
 );

@@ -5,6 +5,7 @@ import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import QuantitySelector from "../ui/QuantitySelector.tsx";
 import { useScript } from "@deco/deco/hooks";
+import { MINICART_DRAWER_ID } from "../../constants.ts";
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
   seller: string;
@@ -29,6 +30,7 @@ const onChange = () => {
     return;
   }
   window.STOREFRONT.CART.setQuantity(productID, quantity);
+  document.getElementById(MINICART_DRAWER_ID)?.click();
 };
 // Copy cart form values into AddToCartButton
 const onLoad = (id: string) => {
@@ -120,7 +122,7 @@ function AddToCartButton(props: Props) {
 
       <button
         disabled
-        class={clx("flex-grow peer-checked:hidden", _class?.toString())}
+        class={clx("flex-grow w-full bg-primary !text-white text-center justify-center items-center peer-checked:hidden", _class?.toString())}
         hx-on:click={useScript(onClick)}
       >
         Add to Cart

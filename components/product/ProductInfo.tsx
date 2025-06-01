@@ -72,19 +72,8 @@ function ProductInfo({ page }: Props) {
 
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
-      {/* Price tag */}
-      <span
-        class={clx(
-          "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
-          percent < 1 && "opacity-0",
-          "w-fit",
-        )}
-      >
-        {percent} % off
-      </span>
-
       {/* Product Name */}
-      <span class={clx("text-3xl font-semibold", "pt-4")}>
+      <span class={clx("text-xl font-semibold")}>
         {title}
       </span>
 

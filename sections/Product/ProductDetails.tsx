@@ -29,8 +29,6 @@ export default function ProductDetails({ page }: Props) {
 
   return (
     <div class="container flex flex-col gap-2 sm:gap-4 lg:gap-5 w-full py-2 sm:py-4 lg:py-5 px-4 sm:px-5 lg:px-0">
-      <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
-
       <div
         class={clx(
           "container grid",

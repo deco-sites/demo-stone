@@ -89,7 +89,7 @@ function Newsletter({
     );
   }
   return (
-    <Section.Container class="bg-base-200">
+    <Section.Container class="bg-base-200 mx-2 max-w-fit">
       <div class="p-6 sm:p-10 lg:p-14 grid grid-flow-row sm:grid-cols-2 gap-6 sm:gap-10 lg:gap-20 place-items-center">
         <Notice {...empty} />
 

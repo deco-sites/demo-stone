@@ -12,7 +12,7 @@ export interface Props {
 }
 
 const WIDTH = 820;
-const HEIGHT = 615;
+const HEIGHT = 820;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 /**
@@ -93,7 +93,7 @@ export default function GallerySlider(props: Props) {
         </div>
 
         {/* Dots */}
-        <div class="col-start-1 col-span-1">
+        {images.length > 1 && <div class="col-start-1 col-span-1">
           <ul
             class={clx(
               "carousel carousel-center",
@@ -120,7 +120,7 @@ export default function GallerySlider(props: Props) {
               </li>
             ))}
           </ul>
-        </div>
+        </div>}
 
         <Slider.JS rootId={id} />
       </div>
