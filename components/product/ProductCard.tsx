@@ -152,10 +152,6 @@ function ProductCard({
             {percent} % off
           </span>
         </div>
-
-        <div class="absolute bottom-0 right-0">
-          <WishlistButton item={item} variant="icon" />
-        </div>
       </figure>
 
       <a href={relativeUrl} class="pt-5">

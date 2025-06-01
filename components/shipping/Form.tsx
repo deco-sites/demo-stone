@@ -6,14 +6,14 @@ export interface Props {
   items: SKU[];
 }
 
-export default function Form({ items }: Props) {
+export default function ({ items }: Props) {
   const slot = useId();
 
   return (
     <div class="flex flex-col gap-2">
       <div class="flex flex-col">
         <span class="text-[#616B6B] text-sm pt-5 border-t-[1px] border-gray-300">
-          Please provide your ZIP code to check the delivery times.
+          Calcule o frete
         </span>
       </div>
 
@@ -36,7 +36,7 @@ export default function Form({ items }: Props) {
           size={8}
         />
         <button type="submit" class="btn join-item no-animation">
-          <span class="[.htmx-request_&]:hidden inline">Calculate</span>
+          <span class="[.htmx-request_&]:hidden inline">Calcular</span>
           <span class="[.htmx-request_&]:inline hidden loading loading-spinner loading-xs" />
         </button>
       </form>

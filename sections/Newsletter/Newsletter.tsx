@@ -53,22 +53,22 @@ function Notice({ title, description }: {
 }
 function Newsletter({
   empty = {
-    title: "Get top deals, latest trends, and more.",
+    title: "Receba as melhores ofertas, últimas tendências e muito mais.",
     description:
-      "Receive our news and promotions in advance. Enjoy and get 10% off your first purchase. For more information click here.",
+      "Receba nossas novidades e promoções antecipadamente. Aproveite e ganhe 10% de desconto na sua primeira compra. Para mais informações clique aqui.",
   },
   success = {
-    title: "Thank you for subscribing!",
+    title: "Obrigado por se inscrever!",
     description:
-      "You're now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!",
+      "Agora você está cadastrado para receber as últimas novidades, tendências e promoções exclusivas diretamente na sua caixa de entrada. Fique ligado!",
   },
   failed = {
-    title: "Oops. Something went wrong!",
+    title: "Ops. Algo deu errado!",
     description:
-      "Something went wrong. Please try again. If the problem persists, please contact us.",
+      "Algo deu errado. Por favor, tente novamente. Se o problema persistir, entre em contato conosco.",
   },
-  label = "Sign up",
-  placeholder = "Enter your email address",
+  label = "Inscreva-se",
+  placeholder = "Digite seu e-mail",
   status,
 }: SectionProps<typeof loader, typeof action>) {
   if (status === "success" || status === "failed") {

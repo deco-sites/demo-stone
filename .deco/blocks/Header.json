@@ -18,50 +18,27 @@
   },
   "navItems": [
     {
-      "children": [
-        {
-          "image": [],
-          "children": [],
-          "name": "Hello"
-        },
-        {
-          "image": [],
-          "children": [],
-          "name": "World"
-        }
-      ],
       "@type": "SiteNavigationElement",
-      "url": "/deals",
-      "name": "Deals"
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "url": "/valentines-day",
-      "name": "Valentine's Day",
+      "url": "/moda/vestuario",
+      "name": "Dia dos Namorados",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/women",
-      "name": "Women",
+      "url": "/moda/vestuario",
+      "name": "Feminino",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/men",
-      "name": "Men",
+      "url": "/moda/vestuario",
+      "name": "Masculino",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/clearance",
-      "name": "Clearance",
-      "children": []
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "url": "/activities",
-      "name": "Activities",
+      "url": "/moda/vestuario",
+      "name": "Ofertas",
       "children": []
     }
   ],

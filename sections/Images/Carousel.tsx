@@ -109,7 +109,6 @@ function BannerItem(
           class={clx(
             "absolute h-full w-full top-0 left-0",
             "flex flex-col justify-center items-center",
-            "px-5 sm:px-10 md:px-20",
             "sm:left-40 sm:items-start sm:max-w-96",
           )}
         >

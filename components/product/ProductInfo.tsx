@@ -99,14 +99,13 @@ function ProductInfo({ page }: Props) {
         {availability === "https://schema.org/InStock"
           ? (
             <>
-              <AddToCartButton
+            <AddToCartButton
                 item={item}
                 seller={seller}
                 product={product}
                 class="btn btn-primary no-animation"
                 disabled={false}
               />
-              <WishlistButton item={item} />
             </>
           )
           : <OutOfStock productID={productID} />}
@@ -124,7 +123,7 @@ function ProductInfo({ page }: Props) {
         <span class="text-sm">
           {description && (
             <details>
-              <summary class="cursor-pointer">Description</summary>
+              <summary class="cursor-pointer">Descrição</summary>
               <div
                 class="ml-2 mt-2"
                 dangerouslySetInnerHTML={{ __html: description }}

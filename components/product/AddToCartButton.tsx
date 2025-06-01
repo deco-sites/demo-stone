@@ -11,7 +11,7 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   seller: string;
   item: AnalyticsItem;
 }
-const onClick = () => {
+const onClick = async () => {
   event?.stopPropagation();
   const button = event?.currentTarget as HTMLButtonElement | null;
   const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
@@ -19,6 +19,8 @@ const onClick = () => {
     decodeURIComponent(container.getAttribute("data-cart-item")!),
   );
   window.STOREFRONT.CART.addToCart(item, platformProps);
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  document.getElementById("bag-button")?.click();
 };
 const onChange = () => {
   const input = event!.currentTarget as HTMLInputElement;
@@ -30,7 +32,6 @@ const onChange = () => {
     return;
   }
   window.STOREFRONT.CART.setQuantity(productID, quantity);
-  document.getElementById(MINICART_DRAWER_ID)?.click();
 };
 // Copy cart form values into AddToCartButton
 const onLoad = (id: string) => {
@@ -122,7 +123,7 @@ function AddToCartButton(props: Props) {
 
       <button
         disabled
-        class={clx("flex-grow w-full bg-primary !text-white text-center justify-center items-center peer-checked:hidden", _class?.toString())}
+        class={clx("flex-grow w-full bg-primary !text-white text-center justify-center items-center peer-checked:hidden mt-2", _class?.toString())}
         hx-on:click={useScript(onClick)}
       >
         Adicionar ao carrinho

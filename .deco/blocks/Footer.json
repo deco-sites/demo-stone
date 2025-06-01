@@ -2,80 +2,80 @@
   "__resolveType": "site/sections/Footer/Footer.tsx",
   "links": [
     {
-      "title": "Our Company",
+      "title": "Nossa Empresa",
       "children": [
         {
-          "title": "About us",
+          "title": "Sobre nós",
           "href": "#"
         },
         {
-          "title": "Our blog",
+          "title": "Nosso blog",
           "href": "#"
         },
         {
-          "title": "Stores",
+          "title": "Lojas",
           "href": "#"
         },
         {
-          "title": "Work with us",
+          "title": "Trabalhe conosco",
           "href": "#"
         }
       ],
       "href": "#"
     },
     {
-      "title": "Orders & Purchases",
+      "title": "Pedidos & Compras",
       "href": "#",
       "children": [
         {
-          "title": "Check order status",
+          "title": "Acompanhar pedido",
           "href": "#"
         },
         {
-          "title": "Return and exchanges",
+          "title": "Trocas e devoluções",
           "href": "#"
         },
         {
-          "title": "Product retail",
+          "title": "Revenda de produtos",
           "href": "#"
         },
         {
-          "title": "Gift cards",
+          "title": "Vale presente",
           "href": "#"
         }
       ]
     },
     {
-      "title": "Support & Services",
+      "title": "Suporte & Serviços",
       "href": "#",
       "children": [
         {
-          "title": "Support Center",
+          "title": "Central de Ajuda",
           "href": "#"
         },
         {
-          "title": "Schedule a service",
+          "title": "Agendar um serviço",
           "href": "#"
         },
         {
-          "title": "Contact us",
+          "title": "Fale conosco",
           "href": "#"
         }
       ]
     },
     {
-      "title": "Support & Services",
+      "title": "Suporte & Serviços",
       "children": [
         {
-          "title": "Support Center",
+          "title": "Central de Ajuda",
           "href": "#"
         },
         {
-          "title": "Schedule a service",
+          "title": "Agendar um serviço",
           "href": "#"
         },
         {
-          "title": "Contact us",
+          "title": "Fale conosco",
           "href": "#"
         }
       ],
@@ -84,7 +84,7 @@
   ],
   "social": [
     {
-      "alt": "facebook",
+      "alt": "Facebook",
       "href": "#",
       "image": "https://assets.decocache.com/demo-stone/b552500c-495b-4fec-aea9-bb26df956c20/Social-media-logo.png"
     },
@@ -150,15 +150,15 @@
   ],
   "policies": [
     {
-      "title": "Privacy Policy",
+      "title": "Política de Privacidade",
       "href": "#"
     },
     {
-      "title": "Terms and Conditions",
+      "title": "Termos e Condições",
       "href": "#"
     },
     {
-      "title": "Cookies Policy",
+      "title": "Política de Cookies",
       "href": "#"
     }
   ],

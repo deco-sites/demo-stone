@@ -36,3 +36,7 @@
     --dot-progress: 100%;
   }
 }
+
+html, body {
+  overflow-x: hidden;
+}

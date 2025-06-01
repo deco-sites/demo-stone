@@ -85,7 +85,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
         >
           <Icon id="search" />
           <span class="text-base-400 truncate">
-            Search products, brands...
+            Pesquisar produtos, marcas...
           </span>
         </label>
 

@@ -5024,6 +5024,10 @@ details.collapse summary::-webkit-details-marker {
   }
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .invalid\:input-error:invalid {
   --tw-border-opacity: 1;
   border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity)));
@@ -5838,11 +5842,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:p-10 {
     padding: 2.5rem;
-  }
-
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .md\:py-24 {
