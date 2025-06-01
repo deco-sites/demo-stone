@@ -53,12 +53,16 @@
       "preload": true
     },
     {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "products": {
-        "__resolveType": "vtex/loaders/legacy/productList.ts",
-        "props": {
-          "sort": "",
-          "term": " "
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "",
+            "count": 12,
+            "collection": "136"
+          }
         }
       }
     },
@@ -98,39 +102,33 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Images/Banner.tsx",
-        "title": "Register and Save Big!",
-        "cta": {
-          "label": "Sign Up",
-          "href": "#"
-        },
-        "description": "<p><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Sign up now to get up to 50% off on your first order. Limited time offer!</span></p>",
-        "images": {
-          "desktop": "https://assets.decocache.com/demo-stone/5bd9d836-316f-4f2e-81b9-d165405d39e2/pcitur.png",
-          "mobile": "https://assets.decocache.com/demo-stone/25fd705b-8aa7-491b-a8ea-f89091c50349/mobile.png"
-        }
+      "__resolveType": "site/sections/Images/Banner.tsx",
+      "title": "Register and Save Big!",
+      "cta": {
+        "label": "Sign Up",
+        "href": "#"
+      },
+      "description": "<p><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Sign up now to get up to 50% off on your first order. Limited time offer!</span></p>",
+      "images": {
+        "desktop": "https://assets.decocache.com/demo-stone/5bd9d836-316f-4f2e-81b9-d165405d39e2/pcitur.png",
+        "mobile": "https://assets.decocache.com/demo-stone/25fd705b-8aa7-491b-a8ea-f89091c50349/mobile.png"
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
-        "label": "Sign up",
-        "placeholder": "Email address",
-        "empty": {
-          "title": "Get top deals, latest trends, and more.",
-          "description": "Receive our news and promotions in advance. Enjoy and get 10% off your first purchase. For more information click here."
-        },
-        "success": {
-          "title": "Thank you for subscribing!",
-          "description": "You’re now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!"
-        },
-        "failed": {
-          "title": "Oops!. Something went wrong!",
-          "description": "Something went wrong. Please try again. If the problem persists, please contact us."
-        }
+      "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
+      "label": "Sign up",
+      "placeholder": "Email address",
+      "empty": {
+        "title": "Get top deals, latest trends, and more.",
+        "description": "Receive our news and promotions in advance. Enjoy and get 10% off your first purchase. For more information click here."
+      },
+      "success": {
+        "title": "Thank you for subscribing!",
+        "description": "You’re now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!"
+      },
+      "failed": {
+        "title": "Oops!. Something went wrong!",
+        "description": "Something went wrong. Please try again. If the problem persists, please contact us."
       }
     },
     {

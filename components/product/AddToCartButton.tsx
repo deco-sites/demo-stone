@@ -125,7 +125,7 @@ function AddToCartButton(props: Props) {
         class={clx("flex-grow w-full bg-primary !text-white text-center justify-center items-center peer-checked:hidden", _class?.toString())}
         hx-on:click={useScript(onClick)}
       >
-        Add to Cart
+        Adicionar ao carrinho
       </button>
 
       {/* Quantity Input */}
