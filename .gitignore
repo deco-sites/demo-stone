@@ -84,3 +84,6 @@ _docker_deps.ts
 
 # Deno files
 deno.*.tmp
+
+DECO_SITE_NAME=demo-stone
+DECO_ENV_NAME=valls

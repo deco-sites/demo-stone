@@ -27,6 +27,7 @@ interface Props {
   paymentMethods?: Social[];
   policies?: Item[];
   logo?: ImageWidget;
+  poweredDeco?: ImageWidget;
   trademark?: string;
 }
 
@@ -36,22 +37,28 @@ function Footer({
   policies = [],
   paymentMethods = [],
   logo,
+  poweredDeco,
   trademark,
 }: Props) {
   return (
     <footer
       class="px-5 sm:px-0 mt-5 sm:mt-10"
-      style={{ backgroundColor: "#EFF0F0" }}
+      style={{ backgroundColor: "#004132" }}
     >
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
-              <a class="text-base font-semibold" href={href}>{title}</a>
+              <a class="text-base font-semibold text-white" href={href}>
+                {title}
+              </a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href }) => (
                   <li>
-                    <a class="text-sm font-medium text-base-400" href={href}>
+                    <a
+                      class="text-sm font-medium text-gray-300 hover:text-white"
+                      href={href}
+                    >
                       {title}
                     </a>
                   </li>
@@ -79,7 +86,7 @@ function Footer({
           </ul>
           <ul class="flex flex-wrap gap-2">
             {paymentMethods.map(({ image, alt }) => (
-              <li class="h-8 w-10 border border-base-100 rounded flex justify-center items-center">
+              <li class="h-8 w-10 border border-gray-400 rounded flex justify-center items-center bg-white">
                 <Image
                   src={image}
                   alt={alt}
@@ -92,13 +99,16 @@ function Footer({
           </ul>
         </div>
 
-        <hr class="w-full text-base-400" />
+        <hr class="w-full border-gray-400" />
 
         <div class="grid grid-flow-row sm:grid-flow-col gap-8">
           <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
             {policies.map(({ title, href }) => (
               <li>
-                <a class="text-xs font-medium" href={href}>
+                <a
+                  class="text-xs font-medium text-gray-300 hover:text-white"
+                  href={href}
+                >
                   {title}
                 </a>
               </li>
@@ -106,15 +116,17 @@ function Footer({
           </ul>
 
           <div class="flex flex-nowrap items-center justify-between sm:justify-center gap-4">
-            <div>
+            <div class="w-48">
               <img loading="lazy" src={logo} />
             </div>
-            <span class="text-xs font-normal text-base-400">{trademark}</span>
+            <span class="text-xs font-normal text-gray-300">{trademark}</span>
           </div>
 
           <div class="flex flex-nowrap items-center justify-center gap-4">
-            <span class="text-sm font-normal text-base-400">Powered by</span>
-            <PoweredByDeco />
+            <span class="text-sm font-normal text-gray-300">Powered by</span>
+            <div class="w-24">
+              <img loading="lazy" src={poweredDeco} />
+            </div>
           </div>
         </div>
       </div>

@@ -18,8 +18,11 @@ export interface Props extends SectionHeaderProps {
 }
 function Card({ image, href, label }: Item) {
   return (
-    <a href={href} class="flex flex-col items-center justify-center gap-4">
-      <div class="w-44 h-44 rounded-full bg-base-200 flex justify-center items-center border border-transparent hover:border-primary">
+    <a
+      href={href}
+      class="flex flex-col items-center justify-center gap-2 sm:gap-4"
+    >
+      <div class="w-32 h-32 sm:w-40 sm:h-40 lg:w-44 lg:h-44 rounded-full bg-base-200 flex justify-center items-center border border-transparent hover:border-primary">
         <Image
           src={image}
           alt={label}
@@ -28,7 +31,7 @@ function Card({ image, href, label }: Item) {
           loading="lazy"
         />
       </div>
-      <span class="font-medium text-sm">{label}</span>
+      <span class="font-medium text-xs sm:text-sm text-center">{label}</span>
     </a>
   );
 }
@@ -40,19 +43,19 @@ function CategoryGrid({ title, cta, items }: Props) {
 
       {device === "desktop"
         ? (
-          <div class="grid grid-cols-6 gap-10">
+          <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-10">
             {items.map((i) => <Card {...i} />)}
           </div>
         )
         : (
-          <Slider class="carousel carousel-center sm:carousel-end gap-5 w-full">
+          <Slider class="carousel carousel-center sm:carousel-end gap-3 sm:gap-5 w-full">
             {items.map((i, index) => (
               <Slider.Item
                 index={index}
                 class={clx(
                   "carousel-item",
-                  "first:pl-5 first:sm:pl-0",
-                  "last:pr-5 last:sm:pr-0",
+                  "first:pl-4 first:sm:pl-0",
+                  "last:pr-4 last:sm:pr-0",
                 )}
               >
                 <Card {...i} />

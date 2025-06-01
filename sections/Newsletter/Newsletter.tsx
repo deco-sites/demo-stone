@@ -41,11 +41,11 @@ function Notice({ title, description }: {
   description?: string;
 }) {
   return (
-    <div class="flex flex-col justify-center items-center sm:items-start gap-4">
-      <span class="text-3xl font-semibold text-center sm:text-start">
+    <div class="flex flex-col justify-center items-center sm:items-start gap-2 sm:gap-4">
+      <span class="text-xl sm:text-2xl lg:text-3xl font-semibold text-center sm:text-start">
         {title}
       </span>
-      <span class="text-sm font-normal text-base-400 text-center sm:text-start">
+      <span class="text-xs sm:text-sm font-normal text-base-400 text-center sm:text-start">
         {description}
       </span>
     </div>
@@ -60,7 +60,7 @@ function Newsletter({
   success = {
     title: "Thank you for subscribing!",
     description:
-      "You’re now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!",
+      "You're now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!",
   },
   failed = {
     title: "Oops. Something went wrong!",
@@ -74,10 +74,13 @@ function Newsletter({
   if (status === "success" || status === "failed") {
     return (
       <Section.Container class="bg-base-200">
-        <div class="p-14 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
+        <div class="p-6 sm:p-10 lg:p-14 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 lg:gap-10">
           <Icon
-            size={80}
-            class={clx(status === "success" ? "text-success" : "text-error")}
+            size={60}
+            class={clx(
+              status === "success" ? "text-success" : "text-error",
+              "sm:w-20 sm:h-20",
+            )}
             id={status === "success" ? "check-circle" : "error"}
           />
           <Notice {...status === "success" ? success : failed} />
@@ -87,23 +90,23 @@ function Newsletter({
   }
   return (
     <Section.Container class="bg-base-200">
-      <div class="p-14 grid grid-flow-row sm:grid-cols-2 gap-10 sm:gap-20 place-items-center">
+      <div class="p-6 sm:p-10 lg:p-14 grid grid-flow-row sm:grid-cols-2 gap-6 sm:gap-10 lg:gap-20 place-items-center">
         <Notice {...empty} />
 
         <form
           hx-target="closest section"
           hx-swap="outerHTML"
           hx-post={useComponent(import.meta.url)}
-          class="flex flex-col sm:flex-row gap-4 w-full"
+          class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full"
         >
           <input
             name="email"
-            class="input input-bordered flex-grow"
+            class="input input-bordered flex-grow text-sm sm:text-base"
             type="text"
             placeholder={placeholder}
           />
 
-          <button class="btn btn-primary" type="submit">
+          <button class="btn btn-primary text-sm sm:text-base" type="submit">
             <span class="[.htmx-request_&]:hidden inline">
               {label}
             </span>

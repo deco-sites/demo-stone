@@ -39,7 +39,7 @@ function FilterValues({ key, values }: FilterToggle) {
 
         if (avatars) {
           return (
-            <a href={url} rel="nofollow">
+            <a key={url} href={url} rel="nofollow">
               <Avatar
                 content={value}
                 variant={selected ? "active" : "default"}
@@ -53,13 +53,14 @@ function FilterValues({ key, values }: FilterToggle) {
 
           return range && (
             <ValueItem
+              key={url}
               {...item}
               label={`${formatPrice(range.from)} - ${formatPrice(range.to)}`}
             />
           );
         }
 
-        return <ValueItem {...item} />;
+        return <ValueItem key={url} {...item} />;
       })}
     </ul>
   );
@@ -71,7 +72,7 @@ function Filters({ filters }: Props) {
       {filters
         .filter(isToggle)
         .map((filter) => (
-          <li class="flex flex-col gap-4">
+          <li key={filter.key} class="flex flex-col gap-4">
             <span>{filter.label}</span>
             <FilterValues {...filter} />
           </li>

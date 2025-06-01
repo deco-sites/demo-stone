@@ -65,7 +65,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
       </div>
     </Modal>
 
-    <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300">
+    <div class="flex flex-col gap-2 sm:gap-4 pt-3 sm:pt-5 container border-b border-gray-300">
       <div class="grid grid-cols-3 place-items-center">
         <div class="place-self-start">
           <a href="/" aria-label="Store logo">
@@ -80,7 +80,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
 
         <label
           for={SEARCHBAR_POPUP_ID}
-          class="input input-bordered flex items-center gap-2 w-full"
+          class="input input-bordered flex items-center gap-2 w-full text-sm sm:text-base"
           aria-label="search icon button"
         >
           <Icon id="search" />
@@ -89,14 +89,14 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           </span>
         </label>
 
-        <div class="flex gap-4 place-self-end">
+        <div class="flex gap-2 sm:gap-4 place-self-end">
           <Bag />
         </div>
       </div>
 
       <div class="flex justify-between items-center">
         <ul class="flex">
-          {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
+          {navItems?.slice(0, 10).map((item) => <NavItem key={item.name || item.url} item={item} />)}
         </ul>
         <div>
           {/* ship to */}

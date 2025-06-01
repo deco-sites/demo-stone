@@ -92,7 +92,8 @@ function PageResult(props: SectionProps<typeof loader>) {
         class={clx(
           "grid items-center",
           "grid-cols-2 gap-2",
-          "sm:grid-cols-4 sm:gap-10",
+          "sm:grid-cols-3 sm:gap-4",
+          "lg:grid-cols-4 lg:gap-10",
           "w-full",
         )}
       >
@@ -102,7 +103,7 @@ function PageResult(props: SectionProps<typeof loader>) {
             product={product}
             preload={index === 0}
             index={offset + index}
-            class="h-full min-w-[160px] max-w-[300px]"
+            class="h-full min-w-[140px] sm:min-w-[160px] max-w-[300px]"
           />
         ))}
       </div>
@@ -222,7 +223,7 @@ function Result(props: SectionProps<typeof loader>) {
         {partial
           ? <PageResult {...props} />
           : (
-            <div class="container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 sm:px-0">
+            <div class="container flex flex-col gap-2 sm:gap-4 lg:gap-5 w-full py-2 sm:py-4 lg:py-5 px-4 sm:px-5 lg:px-0">
               <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
 
               {device === "mobile" && (
@@ -232,7 +233,9 @@ function Result(props: SectionProps<typeof loader>) {
                     <div class="bg-base-100 flex flex-col h-full divide-y overflow-y-hidden">
                       <div class="flex justify-between items-center">
                         <h1 class="px-4 py-3">
-                          <span class="font-medium text-2xl">Filters</span>
+                          <span class="font-medium text-xl sm:text-2xl">
+                            Filters
+                          </span>
                         </h1>
                         <label class="btn btn-ghost" for={controls}>
                           <Icon id="close" />
@@ -250,16 +253,16 @@ function Result(props: SectionProps<typeof loader>) {
                       {sortBy}
                     </div>
 
-                    <label class="btn btn-ghost" for={controls}>
+                    <label class="btn btn-ghost text-sm" for={controls}>
                       Filters
                     </label>
                   </div>
                 </Drawer>
               )}
 
-              <div class="grid place-items-center grid-cols-1 sm:grid-cols-[250px_1fr]">
+              <div class="grid place-items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-[250px_1fr] gap-4 lg:gap-0">
                 {device === "desktop" && (
-                  <aside class="place-self-start flex flex-col gap-9">
+                  <aside class="place-self-start flex flex-col gap-6 lg:gap-9">
                     <span class="text-base font-semibold h-12 flex items-center">
                       Filters
                     </span>
@@ -268,7 +271,7 @@ function Result(props: SectionProps<typeof loader>) {
                   </aside>
                 )}
 
-                <div class="flex flex-col gap-9">
+                <div class="flex flex-col gap-6 lg:gap-9">
                   {device === "desktop" && (
                     <div class="flex justify-between items-center">
                       {results}

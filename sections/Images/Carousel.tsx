@@ -28,6 +28,10 @@ export interface Banner {
     subTitle: string;
     /** @description Button label */
     label: string;
+    /** @description Button style and color */
+    buttonStyle?: "white" | "green" | "dark-green";
+    /** @description Text color for title and subtitle */
+    textColor?: "dark" | "light" | "white";
   };
 }
 
@@ -67,6 +71,32 @@ function BannerItem(
     event: { name: "view_promotion", params },
   });
 
+  // Define button styles based on buttonStyle prop
+  const getButtonClasses = (buttonStyle?: string) => {
+    switch (buttonStyle) {
+      case "green":
+        return "btn border-0 bg-primary text-white hover:bg-primary hover:opacity-90";
+      case "dark-green":
+        return "btn border-0 bg-[#004132] text-white hover:bg-[#004132] hover:opacity-90";
+      case "white":
+      default:
+        return "btn border-0 bg-white text-black hover:bg-white hover:opacity-90";
+    }
+  };
+
+  // Define text color classes based on textColor prop
+  const getTextClasses = (textColor?: string) => {
+    switch (textColor) {
+      case "light":
+        return "text-gray-300";
+      case "white":
+        return "text-white";
+      case "dark":
+      default:
+        return "text-black";
+    }
+  };
+
   return (
     <a
       {...selectPromotionEvent}
@@ -79,18 +109,28 @@ function BannerItem(
           class={clx(
             "absolute h-full w-full top-0 left-0",
             "flex flex-col justify-center items-center",
-            "px-5 sm:px-0",
+            "px-5 sm:px-10 md:px-20",
             "sm:left-40 sm:items-start sm:max-w-96",
           )}
         >
-          <span class="text-7xl font-bold text-base-100">
+          <span
+            class={`text-3xl sm:text-5xl lg:text-7xl font-bold ${
+              getTextClasses(action.textColor)
+            }`}
+          >
             {action.title}
           </span>
-          <span class="font-normal text-base text-base-100 pt-4 pb-12">
+          <span
+            class={`font-normal text-sm sm:text-base pt-2 sm:pt-4 pb-6 sm:pb-12 text-center sm:text-left ${
+              getTextClasses(action.textColor)
+            }`}
+          >
             {action.subTitle}
           </span>
           <button
-            class="btn btn-primary btn-outline border-0 bg-base-100 min-w-[180px]"
+            class={`${
+              getButtonClasses(action.buttonStyle)
+            } min-w-[120px] sm:min-w-[180px] text-sm sm:text-base`}
             aria-label={action.label}
           >
             {action.label}

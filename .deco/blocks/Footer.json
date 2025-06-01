@@ -86,22 +86,22 @@
     {
       "alt": "facebook",
       "href": "#",
-      "image": "https://assets.decocache.com/storefront/0c906fb7-38db-4663-ba1c-21c08c129d9a/1742560235833-66137259-6bdb-4322-bed1-a2593560934c"
+      "image": "https://assets.decocache.com/demo-stone/b552500c-495b-4fec-aea9-bb26df956c20/Social-media-logo.png"
     },
     {
       "alt": "Instagram",
       "href": "#",
-      "image": "https://assets.decocache.com/storefront/7cf7eeef-46cb-421d-93f6-f32805653a3f/1742560237426-e71ae7f3-0f51-4185-af0a-fca08ebe4451"
+      "image": "https://assets.decocache.com/demo-stone/99436757-0735-4cee-8c29-9ca6e2ed8fb6/Social-media-logo-1.png"
     },
     {
       "alt": "Pinterest",
       "href": "#",
-      "image": "https://assets.decocache.com/storefront/8cdb4a43-a415-4ef6-9994-03829a28f7f2/1742560238662-4becba39-fc08-4df2-bb5d-5e843f375deb"
+      "image": "https://assets.decocache.com/demo-stone/ea30ba27-7d8b-43ae-af44-1a68e4378ea4/Social-media-logo-2.png"
     },
     {
       "alt": "X",
       "href": "#",
-      "image": "https://assets.decocache.com/storefront/4316fef2-c57f-41e7-8b11-da4de72c83f8/1742560239923-179a9ee9-3813-47b8-96eb-11e0c5558ede"
+      "image": "https://assets.decocache.com/demo-stone/8c82a227-e22c-429e-9743-e24a194730dc/Social-media-logo-3.png"
     }
   ],
   "paymentMethods": [
@@ -162,6 +162,7 @@
       "href": "#"
     }
   ],
-  "logo": "https://assets.decocache.com/storefront/5453831b-a609-4249-af38-e385a2cb4e7f/1742560260738-f1faab73-e4ff-4037-b7c4-5d02bd0b1209",
-  "trademark": "TM & © 2023 Deco Storefront, Inc."
+  "logo": "https://assets.decocache.com/demo-stone/28db7272-6957-484c-8947-bb969264e788/pagarmelogo2.svg",
+  "trademark": "TM & © 2025 Deco Storefront, Inc.",
+  "poweredDeco": "https://assets.decocache.com/demo-stone/92e14bbe-810c-4e82-86d3-8905632c982e/deocooooo.png"
 }

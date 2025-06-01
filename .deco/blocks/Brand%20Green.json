@@ -1,0 +1,81 @@
+{
+  "__resolveType": "site/sections/Theme/Theme.tsx",
+  "buttonStyle": {
+    "--border-btn": "1px",
+    "--rounded-btn": "9999px",
+    "--btn-focus-scale": "0.95",
+    "--animation-btn": "0.25s"
+  },
+  "font": {
+    "__resolveType": "website/loaders/fonts/googleFonts.ts",
+    "fonts": [
+      {
+        "variations": [
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "600"
+          },
+          {
+            "weight": "700"
+          }
+        ],
+        "family": "Mukta"
+      },
+      {
+        "variations": [
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "600"
+          },
+          {
+            "weight": "700"
+          }
+        ],
+        "family": "Poppins"
+      }
+    ]
+  },
+  "colorScheme": "any",
+  "otherStyles": {
+    "--rounded-box": "1rem",
+    "--rounded-badge": "9999px",
+    "--animation-input": "0.2s",
+    "--tab-border": "1px",
+    "--tab-radius": "0.75rem"
+  },
+  "mode": "light",
+  "mainColors": {
+    "primary": "#00af55",
+    "base-100": "#ffffff",
+    "secondary": "#41de00",
+    "tertiary": "#e1fadc",
+    "success": "#00af55",
+    "warning": "#ffc22d",
+    "error": "#ff6f70",
+    "info": "#057EB5",
+    "neutral": "#8897a9"
+  },
+  "complementaryColors": {
+    "primary-content": "#f7fafe",
+    "secondary-content": "#004132",
+    "tertiary-content": "#004132",
+    "base-200": "#e1fadc",
+    "base-300": "#dce1e6",
+    "base-content": "#004132",
+    "neutral-content": "#f6f7f8",
+    "success-content": "#f7fafe",
+    "warning-content": "#004132",
+    "error-content": "#f7fafe",
+    "info-content": "#f7fafe"
+  }
+} 

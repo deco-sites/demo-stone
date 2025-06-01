@@ -214,15 +214,15 @@ const toVariables = (
 };
 
 const defaultTheme = {
-  "primary": "oklch(1 0 0)",
-  "secondary": "oklch(1 0 0)",
-  "tertiary": "oklch(1 0 0)",
-  "neutral": "oklch(1 0 0)",
-  "base-100": "oklch(1 0 0)",
-  "info": "oklch(1 0 0)",
-  "success": "oklch(0.9054 0.1546 194.7689)",
-  "warning": "oklch(1 0 0)",
-  "error": "oklch(1 0 0)",
+  "primary": "#00af55", // Main: RGB 0, 175, 85
+  "secondary": "#41de00", // Main more saturated: RGB 65, 222, 0
+  "tertiary": "#e1fadc", // Lighter green: RGB 225, 250, 220
+  "neutral": "#8897a9", // Neutral 500 from your scale
+  "base-100": "#f7fafe", // White/light: RGB 247, 250, 254
+  "info": "#057EB5",
+  "success": "#00af55", // Using your main green for success
+  "warning": "#ffc22d",
+  "error": "#ff6f70",
 
   "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
   "--rounded-btn": "0.2rem" as const, // border radius rounded-btn utility class, used in buttons and similar element
@@ -265,17 +265,34 @@ function Section({
     [
       "--font-family",
       font?.family ||
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+      "'Mukta', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
     ],
   ]
     .map(([name, value]) => ({ name, value }));
 
   return (
-    <SiteTheme
-      fonts={font ? [font] : undefined}
-      variables={variables}
-      colorScheme={colorScheme === "any" ? undefined : colorScheme}
-    />
+    <>
+      <SiteTheme
+        fonts={font ? [font] : undefined}
+        variables={variables}
+        colorScheme={colorScheme === "any" ? undefined : colorScheme}
+      />
+      <style>
+        {`
+          /* Use Poppins for headings and titles */
+          h1, h2, h3, h4, h5, h6,
+          .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl,
+          .card-title, .hero-title, .section-title {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif !important;
+          }
+          
+          /* Ensure body text and buttons use Mukta */
+          body, .btn, p, span, div, a, input, textarea, select {
+            font-family: 'Mukta', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+          }
+        `}
+      </style>
+    </>
   );
 }
 
