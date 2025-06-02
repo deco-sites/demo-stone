@@ -17,7 +17,7 @@
           "action": {
             "title": "Skate into Adventure!",
             "subTitle": "Top-quality roller skate shoes for all levels. ",
-            "href": "/s?q=shoes&page=0",
+            "href": "https://pagarme.myvtex.com/checkout/instore#/vendor/login",
             "label": "Grab Yours Now!",
             "buttonStyle": "dark-green",
             "textColor": "white"
@@ -30,7 +30,7 @@
           "action": {
             "title": "Discover Fresh Looks",
             "subTitle": "Modern men's clothing and accessories.",
-            "href": "/men",
+            "href": "https://pagarme.myvtex.com/checkout/instore#/vendor/login",
             "label": "Shop the Collection",
             "buttonStyle": "green",
             "textColor": "dark"
@@ -41,7 +41,7 @@
           "mobile": "https://assets.decocache.com/demo-stone/c545fb8a-6fdc-41c2-bb46-1a22287cf38a/banner01-mobile.png",
           "action": {
             "label": "Shop Now!",
-            "href": "/women",
+            "href": "https://pagarme.myvtex.com/checkout/instore#/vendor/login",
             "title": "Embrace New Trends",
             "subTitle": "Stylish clothes and accessories.",
             "textColor": "white",
