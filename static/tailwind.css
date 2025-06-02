@@ -5627,10 +5627,6 @@ html, body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .sm\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -5641,6 +5637,10 @@ html, body {
 
   .sm\:grid-cols-\[150px_1fr\] {
     grid-template-columns: 150px 1fr;
+  }
+
+  .sm\:grid-cols-\[250px_1fr\] {
+    grid-template-columns: 250px 1fr;
   }
 
   .sm\:grid-cols-\[min-content_1fr\] {
@@ -5956,10 +5956,6 @@ html, body {
 
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-\[250px_1fr\] {
-    grid-template-columns: 250px 1fr;
   }
 
   .lg\:flex-row {

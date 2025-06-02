@@ -34,7 +34,8 @@
           "selectedFacets": [],
           "advancedConfigs": {
             "includeOriginalAttributes": []
-          }
+          },
+          "count": 3
         },
         "layout": {
           "columns": {

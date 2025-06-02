@@ -93,34 +93,36 @@ export default function GallerySlider(props: Props) {
         </div>
 
         {/* Dots */}
-        {images.length > 1 && <div class="col-start-1 col-span-1">
-          <ul
-            class={clx(
-              "carousel carousel-center",
-              "sm:carousel-vertical",
-              "gap-2",
-              "max-w-full",
-              "overflow-x-auto",
-              "sm:overflow-y-auto",
-            )}
-            style={{ maxHeight: "600px" }}
-          >
-            {images.map((img, index) => (
-              <li class="carousel-item w-16 h-16">
-                <Slider.Dot index={index}>
-                  <Image
-                    style={{ aspectRatio: "1 / 1" }}
-                    class="group-disabled:border-base-400 border rounded object-cover w-full h-full"
-                    width={64}
-                    height={64}
-                    src={img.url!}
-                    alt={img.alternateName}
-                  />
-                </Slider.Dot>
-              </li>
-            ))}
-          </ul>
-        </div>}
+        {images.length > 1 && (
+          <div class="col-start-1 col-span-1">
+            <ul
+              class={clx(
+                "carousel carousel-center",
+                "sm:carousel-vertical",
+                "gap-2",
+                "max-w-full",
+                "overflow-x-auto",
+                "sm:overflow-y-auto",
+              )}
+              style={{ maxHeight: "600px" }}
+            >
+              {images.map((img, index) => (
+                <li class="carousel-item w-16 h-16">
+                  <Slider.Dot index={index}>
+                    <Image
+                      style={{ aspectRatio: "1 / 1" }}
+                      class="group-disabled:border-base-400 border rounded object-cover w-full h-full"
+                      width={64}
+                      height={64}
+                      src={img.url!}
+                      alt={img.alternateName}
+                    />
+                  </Slider.Dot>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <Slider.JS rootId={id} />
       </div>

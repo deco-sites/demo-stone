@@ -99,7 +99,7 @@ function ProductInfo({ page }: Props) {
         {availability === "https://schema.org/InStock"
           ? (
             <>
-            <AddToCartButton
+              <AddToCartButton
                 item={item}
                 seller={seller}
                 product={product}

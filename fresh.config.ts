@@ -4,9 +4,9 @@ import manifest from "./manifest.gen.ts";
 
 export default defineConfig({
   render: (ctx, render) => {
-    ctx.lang = 'pt-BR'
-    render()
-},
+    ctx.lang = "pt-BR";
+    render();
+  },
   plugins: plugins({
     manifest,
     htmx: true,

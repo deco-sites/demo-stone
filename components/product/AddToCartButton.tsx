@@ -123,7 +123,10 @@ function AddToCartButton(props: Props) {
 
       <button
         disabled
-        class={clx("flex-grow w-full bg-primary !text-white text-center justify-center items-center peer-checked:hidden mt-2", _class?.toString())}
+        class={clx(
+          "flex-grow w-full bg-primary !text-white text-center justify-center items-center peer-checked:hidden mt-2",
+          _class?.toString(),
+        )}
         hx-on:click={useScript(onClick)}
       >
         Adicionar ao carrinho

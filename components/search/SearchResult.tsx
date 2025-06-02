@@ -92,7 +92,6 @@ function PageResult(props: SectionProps<typeof loader>) {
         class={clx(
           "grid items-center",
           "grid-cols-2 gap-2",
-          "sm:grid-cols-3 sm:gap-4",
           "lg:grid-cols-4 lg:gap-10",
           "w-full",
         )}
@@ -260,7 +259,7 @@ function Result(props: SectionProps<typeof loader>) {
                 </Drawer>
               )}
 
-              <div class="grid place-items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-[250px_1fr] gap-4 lg:gap-0">
+              <div class="grid place-items-center grid-cols-1 sm:grid-cols-[250px_1fr] gap-4 lg:gap-0">
                 {device === "desktop" && (
                   <aside class="place-self-start flex flex-col gap-6 lg:gap-9">
                     <span class="text-base font-semibold h-12 flex items-center">

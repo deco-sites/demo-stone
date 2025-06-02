@@ -96,7 +96,9 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
 
       <div class="flex justify-between items-center">
         <ul class="flex">
-          {navItems?.slice(0, 10).map((item) => <NavItem key={item.name || item.url} item={item} />)}
+          {navItems?.slice(0, 10).map((item) => (
+            <NavItem key={item.name || item.url} item={item} />
+          ))}
         </ul>
         <div>
           {/* ship to */}
@@ -146,10 +148,9 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       class="grid place-items-center w-screen px-5 gap-4"
       style={{
         height: NAVBAR_HEIGHT_MOBILE,
-        gridTemplateColumns:
-          "min-content auto min-content",
+        gridTemplateColumns: "min-content auto min-content",
       }}
-    > 
+    >
       <div class="flex justify-start items-center">
         <label
           for={SIDEMENU_DRAWER_ID}

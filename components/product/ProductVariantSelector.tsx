@@ -57,7 +57,8 @@ function VariantSelector({ product }: Props) {
   const relativeUrl = relative(url);
   const id = useId();
   const filteredNames = Object.keys(possibilities).filter((name) =>
-    name.toLowerCase() !== "title" && name.toLowerCase() !== "default title" && Object.entries(possibilities[name]).length > 1
+    name.toLowerCase() !== "title" && name.toLowerCase() !== "default title" &&
+    Object.entries(possibilities[name]).length > 1
   );
   if (filteredNames.length === 0) {
     return null;

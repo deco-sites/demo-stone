@@ -74,32 +74,32 @@
         "cta": "/all",
         "items": [
           {
-            "href": "/home-and-living",
+            "href": "/s?q=camisetas&page=1",
             "label": "Home & Living",
             "image": "https://assets.decocache.com/storefront/648ef60d-c193-4fb3-9a36-1929d0676f28/1742560231577-d0433c00-cd26-4638-b519-0cb64b9f82e8"
           },
           {
             "label": "Men",
-            "href": "/men",
+            "href": "/s?q=camisetas&page=1",
             "image": "https://assets.decocache.com/demo-stone/34cfe690-7983-4bfc-820e-937250228cef/man.png"
           },
           {
-            "href": "/women",
+            "href": "/s?q=camisetas&page=1",
             "label": "Women",
             "image": "https://assets.decocache.com/demo-stone/2c5b2f50-5382-4884-9053-5ff091dabaa4/woman.png"
           },
           {
-            "href": "/kids",
+            "href": "/s?q=camisetas&page=1",
             "label": "Kids",
             "image": "https://assets.decocache.com/demo-stone/1f4ab14d-fdf2-4ffb-8950-88af443e33bc/baby.png"
           },
           {
-            "href": "/accessories",
+            "href": "/s?q=camisetas&page=1",
             "label": "Accessories",
             "image": "https://assets.decocache.com/demo-stone/35a3e77a-f749-4690-8cfd-fa269f8b2217/backpack.png"
           },
           {
-            "href": "/home-and-living",
+            "href": "/s?q=camisetas&page=1",
             "label": "Home & Living",
             "image": "https://assets.decocache.com/storefront/648ef60d-c193-4fb3-9a36-1929d0676f28/1742560231577-d0433c00-cd26-4638-b519-0cb64b9f82e8"
           }

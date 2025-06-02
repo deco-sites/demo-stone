@@ -19,27 +19,31 @@
   "navItems": [
     {
       "@type": "SiteNavigationElement",
-      "url": "/moda/vestuario",
+      "url": "/s?q=camisetas&page=1",
       "name": "Dia dos Namorados",
-      "children": []
+      "children": [],
+      "image": null
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/moda/vestuario",
+      "url": "/s?q=camisetas&page=1",
       "name": "Feminino",
-      "children": []
+      "children": [],
+      "image": null
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/moda/vestuario",
+      "url": "/s?q=camisetas&page=1",
       "name": "Masculino",
-      "children": []
+      "children": [],
+      "image": null
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/moda/vestuario",
+      "url": "/s?q=camisetas&page=1",
       "name": "Ofertas",
-      "children": []
+      "children": [],
+      "image": null
     }
   ],
   "loading": "eager"
