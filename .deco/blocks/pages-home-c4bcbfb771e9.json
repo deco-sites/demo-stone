@@ -1,10 +1,27 @@
 {
-  "name": "Home Page",
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "",
+            "count": 12,
+            "collection": "136"
+          }
+        }
       }
     },
     {
@@ -51,20 +68,6 @@
         }
       ],
       "preload": true
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "",
-            "count": 12,
-            "collection": "136"
-          }
-        }
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -143,9 +146,6 @@
       }
     }
   ],
-  "__resolveType": "website/pages/Page.tsx",
-  "path": "/",
-  "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
-  }
+  "name": "Home Page",
+  "path": "/"
 }
