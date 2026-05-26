@@ -186,7 +186,7 @@ function Header({
   alerts = [],
   logo = {
     src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+      "https://decoims.com/demo-stone/563c9959-3092-419f-ae93-f7cfbc2f4bd2/197e4233bad41948.png",
     width: 100,
     height: 16,
     alt: "Logo",

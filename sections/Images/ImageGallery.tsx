@@ -56,9 +56,9 @@ function Gallery({
   banners = [
     {
       mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/b531631b-8523-4feb-ac37-5112873abad2",
+        "https://decoims.com/demo-stone/c6cc1e2a-1eff-43ea-8cad-e37afa9f7362/b00140565292e994.jpg",
       desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/b531631b-8523-4feb-ac37-5112873abad2",
+        "https://decoims.com/demo-stone/c6cc1e2a-1eff-43ea-8cad-e37afa9f7362/b00140565292e994.jpg",
       alt: "Fashion",
       href: "/",
     },
@@ -66,23 +66,23 @@ function Gallery({
       alt: "Fashion",
       href: "/",
       mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1125d938-89ff-4aae-a354-63d4241394a6",
+        "https://decoims.com/demo-stone/d009a600-7555-48ef-8b81-5f1b1afee857/5a74f902da0bc031.jpg",
       desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1125d938-89ff-4aae-a354-63d4241394a6",
+        "https://decoims.com/demo-stone/d009a600-7555-48ef-8b81-5f1b1afee857/5a74f902da0bc031.jpg",
     },
     {
       mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/dd1e2acb-ff80-49f9-8f56-1deac3b7a42d",
+        "https://decoims.com/demo-stone/2c0d54cf-08a3-4a9e-bdcc-6501d4187f00/22f0a68a97a32230.jpg",
       desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/dd1e2acb-ff80-49f9-8f56-1deac3b7a42d",
+        "https://decoims.com/demo-stone/2c0d54cf-08a3-4a9e-bdcc-6501d4187f00/22f0a68a97a32230.jpg",
       href: "/",
       alt: "Fashion",
     },
     {
       mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/0b85ba2d-48b1-4f5b-b619-7f4a7f50b455",
+        "https://decoims.com/demo-stone/3553c1ed-003f-4d35-a2e0-2807d53ff65f/aa22385caef90351.jpg",
       desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/0b85ba2d-48b1-4f5b-b619-7f4a7f50b455",
+        "https://decoims.com/demo-stone/3553c1ed-003f-4d35-a2e0-2807d53ff65f/aa22385caef90351.jpg",
       alt: "Fashion",
       href: "/",
     },

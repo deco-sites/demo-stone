@@ -20,12 +20,12 @@ function Logos({
     {
       alt: "deco",
       image:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fe7cd8ba-c954-45d6-9282-ee7d8ca8e3c7",
+        "https://decoims.com/demo-stone/d9696e0b-a87f-4bbc-ae29-7a5d51e964b2/ed85e01cae30b934.svg",
     },
     {
       alt: "deco",
       image:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/637e8601-6b86-4979-aa97-68013a2a60fd",
+        "https://decoims.com/demo-stone/edae0c0f-ae95-499b-9219-8f8992f8bfa8/7b89d6ef10a9ba1e.svg",
     },
   ],
 }: Props) {
