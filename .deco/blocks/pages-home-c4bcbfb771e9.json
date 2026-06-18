@@ -28,8 +28,8 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "desktop": "https://assets.decocache.com/demo-stone/2e9372db-103f-4105-ae42-c1171ff5c65e/banner03.png",
-          "mobile": "https://assets.decocache.com/demo-stone/bbc5269a-dcf7-4964-a169-e37f25b3ff7c/banner03-mobile.png",
+          "desktop": "https://decoims.com/demo-stone/99344f0e-3add-4a72-888f-cdb6f863654d/banner03.png",
+          "mobile": "https://decoims.com/demo-stone/495bc498-c351-4622-84dd-819226e49866/banner03-mobile.png",
           "alt": "Shoes",
           "action": {
             "title": "Skate into Adventure!",
@@ -41,8 +41,8 @@
           }
         },
         {
-          "desktop": "https://assets.decocache.com/demo-stone/89f4508c-a4a9-4e76-9022-25989620f078/banner02.png",
-          "mobile": "https://assets.decocache.com/demo-stone/6feb3d25-330f-497f-b4a7-9724265574d5/banner02-mobile.png",
+          "desktop": "https://decoims.com/demo-stone/595a90ed-043e-4e85-9141-02f21ee75172/banner02.png",
+          "mobile": "https://decoims.com/demo-stone/029548e9-53ad-4825-a021-ad12dbb407f7/banner02-mobile.png",
           "alt": "Men",
           "action": {
             "title": "Discover Fresh Looks",
@@ -54,8 +54,8 @@
           }
         },
         {
-          "desktop": "https://assets.decocache.com/demo-stone/85e5ada7-a8b3-4c08-a48d-bc7193fa999a/banner01.png",
-          "mobile": "https://assets.decocache.com/demo-stone/c545fb8a-6fdc-41c2-bb46-1a22287cf38a/banner01-mobile.png",
+          "desktop": "https://decoims.com/demo-stone/d867cdad-5393-4dcd-ae40-70e1e6f6baf4/banner01.png",
+          "mobile": "https://decoims.com/demo-stone/feeb3e2e-b53c-44d1-908d-08b17ae31bca/banner01-mobile.png",
           "action": {
             "label": "Shop Now!",
             "href": "https://pagarme.myvtex.com/checkout/instore#/vendor/login",
@@ -79,32 +79,32 @@
           {
             "href": "/s?q=camisetas&page=1",
             "label": "Home & Living",
-            "image": "https://assets.decocache.com/storefront/648ef60d-c193-4fb3-9a36-1929d0676f28/1742560231577-d0433c00-cd26-4638-b519-0cb64b9f82e8"
+            "image": "https://decoims.com/demo-stone/562a780b-824d-4c60-a814-c19f574ab6d1/1742560231577-d0433c00-cd26-4638-b519-0cb64b9f82e8.png"
           },
           {
             "label": "Men",
             "href": "/s?q=camisetas&page=1",
-            "image": "https://assets.decocache.com/demo-stone/34cfe690-7983-4bfc-820e-937250228cef/man.png"
+            "image": "https://decoims.com/demo-stone/e036aef5-f20b-4dc6-ae16-ed8cc423eb07/man.png"
           },
           {
             "href": "/s?q=camisetas&page=1",
             "label": "Women",
-            "image": "https://assets.decocache.com/demo-stone/2c5b2f50-5382-4884-9053-5ff091dabaa4/woman.png"
+            "image": "https://decoims.com/demo-stone/2741878c-d629-4684-86fd-30fe4b428eda/woman.png"
           },
           {
             "href": "/s?q=camisetas&page=1",
             "label": "Kids",
-            "image": "https://assets.decocache.com/demo-stone/1f4ab14d-fdf2-4ffb-8950-88af443e33bc/baby.png"
+            "image": "https://decoims.com/demo-stone/0dbe971f-9914-4dbf-938e-330900b528e2/baby.png"
           },
           {
             "href": "/s?q=camisetas&page=1",
             "label": "Accessories",
-            "image": "https://assets.decocache.com/demo-stone/35a3e77a-f749-4690-8cfd-fa269f8b2217/backpack.png"
+            "image": "https://decoims.com/demo-stone/f1638c00-a13d-4774-850e-d6207d46bc31/backpack.png"
           },
           {
             "href": "/s?q=camisetas&page=1",
             "label": "Home & Living",
-            "image": "https://assets.decocache.com/storefront/648ef60d-c193-4fb3-9a36-1929d0676f28/1742560231577-d0433c00-cd26-4638-b519-0cb64b9f82e8"
+            "image": "https://decoims.com/demo-stone/562a780b-824d-4c60-a814-c19f574ab6d1/1742560231577-d0433c00-cd26-4638-b519-0cb64b9f82e8.png"
           }
         ]
       }
@@ -118,8 +118,8 @@
       },
       "description": "<p><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Sign up now to get up to 50% off on your first order. Limited time offer!</span></p>",
       "images": {
-        "desktop": "https://assets.decocache.com/demo-stone/5bd9d836-316f-4f2e-81b9-d165405d39e2/pcitur.png",
-        "mobile": "https://assets.decocache.com/demo-stone/25fd705b-8aa7-491b-a8ea-f89091c50349/mobile.png"
+        "desktop": "https://decoims.com/demo-stone/8e49d0c2-75d6-45c9-a3a5-f2750a056352/pcitur.png",
+        "mobile": "https://decoims.com/demo-stone/2a4bbc5f-ca16-4422-ba10-1cc6e2df04bf/mobile.png"
       }
     },
     {
